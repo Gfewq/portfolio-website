@@ -97,195 +97,544 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg min-h-screen flex items-center px-6 lg:px-12">
-        <div class="max-w-6xl mx-auto py-32">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    <span class="gradient-text">Hey, I'm </span>
-                    <span class="text-white">Omar</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl font-medium mb-8 text-slate-300">
-                    Computer Science Student & AI Enthusiast
-                </h2>
-                <p class="text-lg md:text-xl max-w-2xl mb-10 mx-auto md:mx-0 text-slate-400">
-                    I enjoy creating intelligent and efficient software experiences. Currently pursuing my passion for algorithms, AI, and web technologies.
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-smooth btn-hover-effect relative overflow-hidden">
-                    <span class="relative z-10">View Projects</span>
-                </a>
-                <a href="#contact" class="px-8 py-3 bg-transparent border border-blue-400 hover:bg-blue-900/30 rounded-full font-medium transition-smooth btn-hover-effect relative overflow-hidden">
-                    <span class="relative z-10">Get In Touch</span>
-                </a>
-</div>
+    <section class="hero-bg min-h-screen flex items-center px-6 lg:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto py-20 md:py-32">
+            
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-16 lg:gap-32">
+                
+                <div class="text-center md:text-left md:w-1/2 lg:-ml-12 relative z-20">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        <span class="gradient-text">Hey, I'm </span>
+                        <span class="text-white">Omar</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-medium mb-8 text-slate-300 h-12">
+                        <span id="typewriter"></span><span class="animate-pulse text-blue-500">_</span>
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-2xl mb-10 mx-auto md:mx-0 text-slate-400">
+                        I enjoy creating intelligent and efficient software experiences. Currently pursuing my passion for algorithms, AI, and web technologies.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-smooth btn-hover-effect relative overflow-hidden">
+                            <span class="relative z-10">View Projects</span>
+                        </a>
+                        <a href="#contact" class="px-8 py-3 bg-transparent border border-blue-400 hover:bg-blue-900/30 rounded-full font-medium transition-smooth btn-hover-effect relative overflow-hidden">
+                            <span class="relative z-10">Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="md:w-1/2 w-full flex justify-center items-center relative h-[700px] group/container">
+
+                    <div class="absolute w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] animate-pulse"></div>
+                
+                    <style>
+                        .group\/container:hover .animate-float {
+                            animation-play-state: paused !important;
+                        }
+                    </style>
+                
+                    <div class="absolute top-4 left-0 md:-left-20 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-green-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 0s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center text-green-400 font-bold">
+                                <i data-feather="smartphone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-base font-bold text-white">Android Engineering</div>
+                                <div class="text-xs text-slate-400 font-mono">Java • Kotlin • Git</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Architected scalable apps using <span class="text-green-400 font-semibold">MVC Patterns</span>. Implemented async data handling & JUnit testing.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute top-6 right-0 md:-right-24 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-red-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 1.2s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center text-red-400 font-bold">
+                                <i data-feather="cpu" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-base font-bold text-white">Architecture (RISC-V)</div>
+                                <div class="text-xs text-slate-400 font-mono">Assembly • Registers</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Direct Assembly programming. Deep understanding of <span class="text-red-400 font-semibold">Instruction Sets</span>, stack management, and CPU ops.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute top-[30%] right-4 md:-right-32 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-blue-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 2.5s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 font-bold text-xl">C++</div>
+                            <div>
+                                <div class="text-base font-bold text-white">Systems Engineering</div>
+                                <div class="text-xs text-slate-400 font-mono">Memory • Pointers • GDB</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Manual memory management & optimization. Built low-level tools in <span class="text-blue-400 font-semibold">Linux environments</span>.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute bottom-[20%] right-0 md:-right-16 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-orange-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 3.8s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center text-orange-400 font-bold">
+                                <i data-feather="share-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-base font-bold text-white">Algorithms & Logic</div>
+                                <div class="text-xs text-slate-400 font-mono">Big-O • Graphs • Sorting</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Analysis of computational complexity. optimizing <span class="text-orange-400 font-semibold">search & sort algorithms</span> for efficiency.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-purple-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 1.8s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 font-bold">
+                                <i data-feather="database" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-base font-bold text-white">Backend & Databases</div>
+                                <div class="text-xs text-slate-400 font-mono">SQL • B-Trees • APIs</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Engineered robust schemas with complex <span class="text-purple-400 font-semibold">SQL Joins</span> & database normalization.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute bottom-[25%] left-4 md:-left-16 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-yellow-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 3.2s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center text-yellow-400 font-bold text-xl">Py</div>
+                            <div>
+                                <div class="text-base font-bold text-white">Data Science & AI</div>
+                                <div class="text-xs text-slate-400 font-mono">NumPy • Pandas • RL</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Developed <span class="text-yellow-400 font-semibold">Reinforcement Learning</span> agents & regression models from scratch.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="absolute top-[32%] left-0 md:-left-28 bg-slate-900/95 p-6 rounded-2xl border border-slate-700 backdrop-blur-md animate-float shadow-2xl hover:scale-105 hover:z-50 hover:border-pink-400 transition-all duration-300 cursor-pointer group min-w-[280px]" style="animation-delay: 4.2s;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-pink-400 font-bold">
+                                <i data-feather="bar-chart-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-base font-bold text-white">Math & Statistics</div>
+                                <div class="text-xs text-slate-400 font-mono">Calculus • Lin. Algebra</div>
+                            </div>
+                        </div>
+                        <div class="hidden group-hover:block mt-4 pt-4 border-t border-slate-700">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Strong theoretical foundation in <span class="text-pink-400 font-semibold">Vector Spaces</span> & Statistical Analysis.
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+    </section>
+    <!-- About me Section -->
+    </section>
+    <section id="about" class="relative py-32 bg-slate-950 flex items-center justify-center overflow-hidden">
+
+        <div class="absolute inset-0 z-0 opacity-10" 
+             style="background-image: radial-gradient(#60a5fa 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
+    
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none"></div>
+    
+        <div class="relative z-10 max-w-4xl px-8 w-full">
+    
+            <div class="flex justify-between items-end border-b border-blue-900/50 pb-4 mb-10">
+                <div class="text-xs font-mono text-blue-500 tracking-widest uppercase">
+                    // SYSTEM_CONTEXT
+                </div>
+                <div class="flex gap-1">
+                    <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
+                    <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
+                </div>
             </div>
+    
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                
+                <div class="md:w-1/3 sticky top-10">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-none mb-2">
+                        About<br>
+                        Me<span class="text-blue-500">.</span>
+                    </h2>
+                    <div class="h-1 w-12 bg-blue-500 mt-4 mb-2"></div>
+                    
+                    <p class="text-slate-400 font-mono text-xs uppercase tracking-wider leading-relaxed">
+                        Software Developer <br>
+                        <span class="text-slate-600">&</span> Problem Solver
+                    </p>
+                </div>
+    
+                <div class="md:w-2/3 space-y-6 text-lg text-slate-300 font-light leading-relaxed">
+                    
+                    <p>
+                        I am an International Student currently in my third year pursuing a BSc with Honors in <strong class="text-white font-medium">Computing Science</strong> at the University of Alberta.
+                    </p>
+    
+                    <p>
+                        My passion lies in the logic behind the code. I am deeply interested in <span class="text-blue-400">Algorithms</span> and <span class="text-blue-400">Data Structures</span> and understanding not just how to use a tool, but how to optimize it for efficiency and performance.
+                    </p>
+    
+                    <p>
+                        I enjoy the challenge of solving complex computational problems and building software that is structured, logical, and technically sound.
+                    </p>
+                    
+                    <div class="pt-6">
+                        <a href="https://github.com/Gfewq" class="text-white text-sm font-bold border-b border-blue-500 pb-1 hover:text-blue-400 transition-colors flex items-center gap-2 w-fit">
+                            View Source Code <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="mt-10 border-t border-blue-900/50 pt-4 flex justify-between text-xs font-mono text-slate-600 uppercase">
+                <span>Based in Edmonton, Alberta</span>
+            
+            </div>
+    
         </div>
     </section>
-    <!-- About Section -->
-<section id="about" class="py-20 px-6 lg:px-12 bg-slate-900/50 backdrop-blur-sm relative overflow-hidden">
-    <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl animate-pulse"></div>
-    <div class="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl animate-pulse"></div>
-<div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
-            <span class="gradient-text">About Me</span>
-        </h2>
-        
-        <div class="flex justify-center">
-            <div class="w-full lg:w-2/3 text-center">
-                <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-                <p class="text-lg text-slate-300 mb-6">
-                    I’m a third-year Computer Science student who loves solving challenging problems through code. I enjoy working on projects that blend creativity and logic, from designing algorithms to experimenting with AI and data-driven applications.
-                </p>
-                <p class="text-lg text-slate-300 mb-6">
-                    When I’m not coding, I’m exploring new frameworks, contributing to open-source projects, or tackling programming challenges to sharpen my skills and learn better ways to solve real-world problems.
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="flex items-center gap-2">
-                        <i data-feather="map-pin" class="text-blue-400"></i>
-                        <span>Edmonton, AB</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i data-feather="book" class="text-blue-400"></i>
-                        <span>University of Alberta</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i data-feather="code" class="text-blue-400"></i>
-                        <span>4+ Years Coding</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
     <!-- Skills Section -->
-    <section id="skills" class="py-20 px-6 lg:px-12 bg-slate-950/80 relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/5 to-purple-500/5 blur-3xl transform -translate-x-1/2 -translate-y-1/2 animate-float"></div>
-<div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center"><span class="gradient-text">Technical Skills</span></h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Skill Cards -->
-                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-smooth card-hover">
-                    <i data-feather="code" class="w-8 h-8 mb-4 text-blue-400"></i>
-                    <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
-                    <p class="text-slate-400">C, C++, Python, Javascript, SQL, Assembly</p>
+    <section id="skills" class="py-24 px-6 lg:px-12 bg-slate-950 relative select-none cursor-default">
+    
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+    
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-left">
+                <span class="text-white">Technical</span> <span class="text-slate-500">Proficiency</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+                
+                <div class="md:col-span-2 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-900/80 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+                        <i data-feather="code" class="w-40 h-40 text-white"></i>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <div class="inline-block p-3 bg-blue-500/10 rounded-xl mb-4">
+                            <i data-feather="monitor" class="text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Software Development</h3>
+                        
+                        <p class="text-slate-400 text-base mb-6 leading-relaxed max-w-lg">
+                            Building efficient, object-oriented applications with a strong focus on algorithmic optimization and structure.
+                        </p>
+    
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-2 bg-slate-950 text-slate-300 rounded-lg text-sm font-mono border border-slate-800">C / C++</span>
+                            <span class="px-3 py-2 bg-slate-950 text-slate-300 rounded-lg text-sm font-mono border border-slate-800">Java</span>
+                            <span class="px-3 py-2 bg-slate-950 text-slate-300 rounded-lg text-sm font-mono border border-slate-800">OOP</span>
+                            <span class="px-3 py-2 bg-slate-950 text-slate-300 rounded-lg text-sm font-mono border border-slate-800">Data Structures & Algos</span>
+                            <span class="px-3 py-2 bg-slate-950 text-slate-300 rounded-lg text-sm font-mono border border-slate-800">Android Studio</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-smooth card-hover">
-                    <i data-feather="server" class="w-8 h-8 mb-4 text-blue-400"></i>
-                    <h3 class="text-xl font-semibold mb-2">Data Science & Analytics</h3>
-                    <p class="text-slate-400">SPSS, NumPy, Pandas, Matplotlib</p>
+    
+                <div class="md:row-span-2 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-900/80 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col">
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-purple-900/10 blur-[80px] rounded-full group-hover:bg-purple-900/20 transition-colors pointer-events-none"></div>
+                    
+                    <div class="relative z-10 flex-grow">
+                        <div class="inline-block p-3 bg-purple-500/10 rounded-xl mb-4">
+                            <i data-feather="bar-chart-2" class="text-purple-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Data Science</h3>
+                        
+                        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                            Extracting actionable insights from complex datasets using statistical modeling and Python libraries.
+                        </p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800">
+                                <i data-feather="terminal" class="w-4 h-4 text-purple-400"></i>
+                                <span class="text-slate-300 text-sm font-mono">Python & NumPy</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800">
+                                <i data-feather="pie-chart" class="w-4 h-4 text-purple-400"></i>
+                                <span class="text-slate-300 text-sm font-mono">Pandas & Matplotlib</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800">
+                                <i data-feather="activity" class="w-4 h-4 text-purple-400"></i>
+                                <span class="text-slate-300 text-sm font-mono">SPSS Analytics</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800">
+                                <i data-feather="layers" class="w-4 h-4 text-purple-400"></i>
+                                <span class="text-slate-300 text-sm font-mono">Statistical Modeling</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-smooth card-hover">
-                    <i data-feather="cpu" class="w-8 h-8 mb-4 text-blue-400"></i>
-                    <h3 class="text-xl font-semibold mb-2">Software Development</h3>
-                    <p class="text-slate-400">Object-Oriented Programming (OOP), Data Structures
-& Algorithms</p>
+    
+                <div class="md:col-span-1 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-900/80 transition-all duration-500 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-feather="settings" class="text-green-400"></i>
+                        <h3 class="text-xl font-bold text-white">Systems & Tools</h3>
+                    </div>
+                    
+                    <p class="text-slate-400 text-xs mb-6 flex-grow leading-relaxed">
+                        Navigating low-level environments and utilizing industry-standard version control workflows.
+                    </p>
+    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">RISC-V Assembly</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">Bash / Linux</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">Git & GitHub</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">VS Code</span>
+                    </div>
                 </div>
-                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-smooth card-hover">
-                    <i data-feather="tool" class="w-8 h-8 mb-4 text-blue-400"></i>
-                    <h3 class="text-xl font-semibold mb-2">Tools and Frameworks</h3>
-                    <p class="text-slate-400">Git, Github, VS Code, Android Studio, Firebase, Figma</p>
+    
+                <div class="md:col-span-1 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-900/80 transition-all duration-500 flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-feather="cloud" class="text-orange-400"></i>
+                        <h3 class="text-xl font-bold text-white">Cloud & Backend</h3>
+                    </div>
+                    
+                    <p class="text-slate-400 text-xs mb-6 flex-grow leading-relaxed">
+                        Architecting scalable data storage, handling async APIs, and optimizing queries.
+                    </p>
+                    
+                     <div class="flex flex-wrap gap-2">
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">Firebase</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">Advanced SQL</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">Async APIs</span>
+                        <span class="text-slate-300 font-mono text-xs bg-slate-950 px-2 py-1 rounded border border-slate-800">JSON Models</span>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 lg:px-12 bg-slate-900/50 backdrop-blur-sm">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center"><span class="gradient-text">Featured Projects</span></h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-700/50 transition-smooth card-hover group relative">
-                  <img src="images/port1.png" alt="3D Renderer" class="w-full h-48 object-cover rounded-t-xl">
-                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-smooth pointer-events-none"></div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">3D Renderer</h3>
-                    <p class="text-slate-400 mb-4">A 3D ray tracing engine in C that renders realistic scenes with lighting, shading, and reflections efficiently.</p>
-                    <div class="flex gap-4">
-                      <a href="https://github.com/Gfewq/3D-Renderer" class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
-                        <i data-feather="github" class="w-4 h-4"></i> Code
-                      </a>
-                    </div>
-                  </div>
+    <section id="projects" class="relative py-24 px-6 lg:px-12 overflow-hidden bg-slate-950">
+    
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] -z-10"></div>
+    
+        <div class="max-w-7xl mx-auto relative z-10">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    
+                <div class="relative pl-6 border-l-4 border-blue-600/50">
+                    <div class="absolute -left-4 -top-12 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl -z-10"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-b from-white via-slate-200 to-slate-500">
+                            Academic Projects
+                        </span>
+                    </h2>
+                    
+                    <p class="text-slate-400 max-w-xl text-lg leading-relaxed">
+                        Exploring efficient algorithms, low-level computing, and mobile architecture.
+                    </p>
+                </div>
+            
+                <div class="hidden md:block flex-grow ml-12 pb-2">
+                    <div class="h-px w-full bg-gradient-to-r from-slate-800 to-transparent"></div>
                 </div>
                 
-                <!-- Project 2 -->
-                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-700/50 transition-smooth card-hover">
-                    <img src="images/port1.png" alt="Project 2" class="w-full h-48 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">A* Algorithm</h3>
-                        <p class="text-slate-400 mb-4">An A* pathfinding implementation in RISC-V Assembly that visualizes shortest path exploration and results in the terminal using GLIR.</p>
-                        
-                        <div class="flex gap-4">
-                            <span class="text-slate-500 flex items-center gap-1">
-    <i data-feather="lock" class="w-4 h-4"></i> Private (available upon request)
-</span>
-                            
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
+            <div id="cards" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 group/grid">
                 
-                <!-- Project 3 -->
-                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-700/50 transition-smooth card-hover">
-                    <img src="http://static.photos/technology/640x360/101" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Event Lottery Sign-Up System</h3>
-                        <p class="text-slate-400 mb-4">A mobile Android application that fairly manages event sign-ups through a lottery system, ensuring accessibility and automated notifications for participants.</p>
+                <div class="card group relative bg-slate-900/40 rounded-2xl border border-slate-800 hover:border-slate-600/50 transition-all duration-300 overflow-hidden flex flex-col">
+                    <div class="spotlight absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" 
+                         style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(59, 130, 246, 0.1), transparent 40%);">
+                    </div>
+    
+                    <div class="relative w-full aspect-video overflow-hidden bg-slate-950 border-b border-slate-800/50">
+                        <div class="absolute top-4 right-4 z-20 font-bold text-6xl text-slate-800/50 group-hover:text-slate-700/50 transition-colors select-none">01</div>
+                        <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                        <img src="images/port11.png" alt="3D Renderer" class="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-500 ease-out">
+                    </div>
+                    
+                    <div class="relative p-6 flex flex-col flex-grow z-20">
+                        <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors">3D Renderer</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            A ray tracing engine built from scratch in C. Features dynamic memory management and >90% shading accuracy without external graphics libraries.
+                        </p>
                         
-                        <span class="text-yellow-400 flex items-center gap-1">
-    <i data-feather="clock" class="w-4 h-4"></i> In Progress
-</span>
-                            
+                        <div class="pt-4 border-t border-slate-800/50 flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs text-slate-400 bg-slate-800/50 px-2 py-1 rounded border border-slate-700/50">C</span>
+                            </div>
+                            <a href="https://github.com/Gfewq/3D-Renderer" class="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+                                <i data-feather="github" class="w-4 h-4"></i> Source
                             </a>
                         </div>
                     </div>
                 </div>
+                
+                <div class="card group relative bg-slate-900/40 rounded-2xl border border-slate-800 hover:border-slate-600/50 transition-all duration-300 overflow-hidden flex flex-col">
+                    <div class="spotlight absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" 
+                         style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(168, 85, 247, 0.1), transparent 40%);">
+                    </div>
+                
+                    <div class="relative w-full aspect-video overflow-hidden bg-slate-950 border-b border-slate-800/50">
+                        <div class="absolute top-4 right-4 z-20 font-bold text-6xl text-slate-800/50 group-hover:text-slate-700/50 transition-colors select-none">02</div>
+                        <div class="absolute inset-0 bg-purple-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                        <img src="images/port12.png" alt="A* Algorithm" class="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-500 ease-out">
+                    </div>
+                
+                    <div class="relative p-6 flex flex-col flex-grow z-20">
+                        <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">A* Pathfinding</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            Optimal pathfinding implemented in RISC-V Assembly. Visualizes the Manhattan distance calculation in real-time via terminal output.
+                        </p>
+                        
+                        <div class="pt-4 border-t border-slate-800/50 flex items-center justify-between">
+                                <div class="flex gap-2">
+                                <span class="text-xs text-slate-400 bg-slate-800/50 px-2 py-1 rounded border border-slate-700/50">RISC-V Assembly</span>
+                            </div>
+                            
+                            <div class="group/private relative flex items-center gap-2 text-sm text-yellow-500/80 cursor-help">
+                                <i data-feather="lock" class="w-3 h-3"></i>
+                                <span>Private</span>
+                                
+                                <span class="absolute bottom-full mb-2 right-0 w-max px-2 py-1 text-xs text-slate-300 bg-slate-800 border border-slate-700 rounded opacity-0 group-hover/private:opacity-100 transition-opacity pointer-events-none shadow-xl">
+                                    Available upon request
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card group relative bg-slate-900/40 rounded-2xl border border-slate-800 hover:border-slate-600/50 transition-all duration-300 overflow-hidden flex flex-col">
+                    <div class="spotlight absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" 
+                         style="background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(34, 197, 94, 0.1), transparent 40%);">
+                    </div>
+    
+                    <div class="relative w-full aspect-video overflow-hidden bg-slate-950 border-b border-slate-800/50">
+                        <div class="absolute top-4 right-4 z-20 font-bold text-6xl text-slate-800/50 group-hover:text-slate-700/50 transition-colors select-none">03</div>
+                        <div class="absolute inset-0 bg-emerald-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                        <img src="images/port123.png" alt="Lottery App" class="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-500 ease-out">
+                    </div>
+    
+                    <div class="relative p-6 flex flex-col flex-grow z-20">
+                        <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">Event Lottery</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                            A fair event registration system using Android Studio, Firebase & Google Maps. Handles geolocation verification, waitlists, and automated lottery draws.
+                        </p>
+                        
+                        <div class="pt-4 border-t border-slate-800/50 flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs text-slate-400 bg-slate-800/50 px-2 py-1 rounded border border-slate-700/50">Java</span>
+                                <span class="text-xs text-slate-400 bg-slate-800/50 px-2 py-1 rounded border border-slate-700/50">Android Studio</span>
+                                <span class="text-xs text-slate-400 bg-slate-800/50 px-2 py-1 rounded border border-slate-700/50">Firebase</span>
+                            </div>
+                            <a href="https://github.com/CMPUT301F25aurora/aurora-borealis.git" class="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+                                <i data-feather="github" class="w-4 h-4"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-
+    
+    <script>
+        document.getElementById("cards").onmousemove = e => {
+            for(const card of document.getElementsByClassName("card")) {
+                const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
+    
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+            };
+        }
+    </script>
     <!-- Contact Section -->
-<section id="contact" class="py-20 px-6 lg:px-12">
-    <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center"><span class="gradient-text">Get In Touch</span></h2>
-        <div class="bg-slate-800/50 rounded-xl p-8 md:p-12 border border-slate-700/50">
-            <p class="text-lg text-center mb-8 text-slate-300">
-                If you’re interested in my work, have questions, or want to discuss opportunities, feel free to get in touch anytime.
+    <section id="contact" class="relative py-20 px-6 lg:px-12 overflow-hidden">
+    
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-[100px] -z-10"></div>
+    
+        <div class="max-w-3xl mx-auto relative z-10">
+            
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 text-center">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 animate-gradient bg-300%">Get In Touch</span>
+            </h2>
+            
+            <p class="text-slate-400 text-center mb-12 text-lg leading-relaxed max-w-2xl mx-auto">
+                I'm currently looking for Software Engineering opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
-            <form class="space-y-6" action="//https://formspree.io/f/xzzjonvj" method="POST">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label for="name" class="block mb-2 text-sm font-medium text-slate-400">Your Name</label>
-                        <input type="text" name="name" id="name" class="w-full px-4 py-3 bg-slate-700/30 border border-slate-700/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Doe" required>
+    
+            <div class="bg-slate-900/40 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 md:p-10 shadow-xl">
+                
+                <form id="contact-form" class="space-y-6">
+                    
+                    <input type="hidden" name="access_key" value="c0069987-1266-4fc1-9dbe-1e7800a1ac83">
+    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="text-sm font-medium text-slate-400 ml-1">Name</label>
+                            <input type="text" name="name" id="name" required placeholder="John Doe"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-950/50 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm font-medium text-slate-400 ml-1">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="john@example.com"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-950/50 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-slate-400">Your Email</label>
-                        <input type="email" name="email" id="email" class="w-full px-4 py-3 bg-slate-700/30 border border-slate-700/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@example.com" required>
+    
+                    <div class="space-y-2">
+                        <label for="subject" class="text-sm font-medium text-slate-400 ml-1">Subject</label>
+                        <input type="text" name="subject" id="subject" required placeholder="Let's work together!"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-950/50 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all">
                     </div>
+    
+                    <div class="space-y-2">
+                        <label for="message" class="text-sm font-medium text-slate-400 ml-1">Message</label>
+                        <textarea name="message" id="message" rows="4" required placeholder="Hi Omar..."
+                            class="w-full px-4 py-3 rounded-xl bg-slate-950/50 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all resize-none"></textarea>
+                    </div>
+    
+                    <button type="submit" id="submit-btn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3.5 rounded-xl transition-all shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 hover:-translate-y-0.5">
+                        Send Message
+                    </button>
+    
+                    <p id="result" class="text-center text-sm text-slate-400 mt-4"></p>
+                </form>
                 </div>
-                <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-slate-400">Subject</label>
-                    <input type="text" name="subject" id="subject" class="w-full px-4 py-3 bg-slate-700/30 border border-slate-700/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Let's work together!" required>
-                </div>
-                <div>
-                    <label for="message" class="block mb-2 text-sm font-medium text-slate-400">Your Message</label>
-                    <textarea name="message" id="message" rows="5" class="w-full px-4 py-3 bg-slate-700/30 border border-slate-700/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Hi Omar, I'd like to talk about..." required></textarea>
-                </div>
-                <button type="submit" class="w-full md:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-smooth">Send Message</button>
-            </form>
-        </div>
-    </div>
-                <div class="mt-12 flex flex-wrap justify-center gap-8">
-                    <a href="#" class="flex items-center gap-2 hover:text-blue-400 transition-smooth">
-                        <i data-feather="mail" class="w-5 h-5"></i> oabbasi@ualberta.ca
-                    </a>
-                    <a href="https://github.com/Gfewq#" class="flex items-center gap-2 hover:text-blue-400 transition-smooth">
-                        <i data-feather="github" class="w-5 h-5"></i> Gfewq
-                    </a>
-                    <a href="https://www.linkedin.com/in/omar-abbasi-69485a345/" class="flex items-center gap-2 hover:text-blue-400 transition-smooth">
-                        <i data-feather="linkedin" class="w-5 h-5"></i> Omar Abbasi
-                    </a>
-                </div>
+    
+            <div class="mt-12 flex flex-wrap justify-center gap-8 md:gap-12">
+                <a href="mailto:oabbasi@ualberta.ca" class="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors">
+                    <i data-feather="mail" class="w-4 h-4 group-hover:scale-110 transition-transform"></i> 
+                    <span class="text-sm">oabbasi@ualberta.ca</span>
+                </a>
+                <a href="https://github.com/Gfewq" target="_blank" class="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors">
+                    <i data-feather="github" class="w-4 h-4 group-hover:scale-110 transition-transform"></i> 
+                    <span class="text-sm">Gfewq</span>
+                </a>
+                <a href="https://www.linkedin.com/in/omar-abbasi-69485a345/" target="_blank" class="group flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors">
+                    <i data-feather="linkedin" class="w-4 h-4 group-hover:scale-110 transition-transform"></i> 
+                    <span class="text-sm">Omar Abbasi</span>
+                </a>
             </div>
         </div>
     </section>
@@ -357,6 +706,93 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 });
 });
         });
+    // Typewriter Effect Logic
+    const words = ["CS Student", "Software Engineer", "Tech Enthusiast"];
+    let i = 0;
+    let timer;
+
+    function typeWriter() {
+        const heading = document.getElementById("typewriter");
+        const word = words[i];
+        const currentText = heading.textContent;
+
+        if (currentText.length < word.length) {
+            heading.textContent = word.substring(0, currentText.length + 1);
+            timer = setTimeout(typeWriter, 150);
+        } else {
+            setTimeout(deleteText, 2000);
+        }
+    }
+
+    function deleteText() {
+        const heading = document.getElementById("typewriter");
+        const currentText = heading.textContent;
+
+        if (currentText.length > 0) {
+            heading.textContent = currentText.substring(0, currentText.length - 1);
+            timer = setTimeout(deleteText, 100);
+        } else {
+            i = (i + 1) % words.length;
+            typeWriter();
+        }
+    }
+
+    typeWriter();
     </script>
+    <script>
+        const form = document.getElementById('contact-form');
+        const result = document.getElementById('result');
+        const button = document.getElementById('submit-btn');
+        
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Change button to loading state
+          button.innerText = "Sending...";
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+        
+          fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+          .then(async (response) => {
+              let json = await response.json();
+              if (response.status == 200) {
+                  // Success!
+                  result.innerHTML = "Message sent successfully!";
+                  result.classList.remove("text-red-500");
+                  result.classList.add("text-green-500");
+                  
+                  // Reset button and form
+                  button.innerText = "Send Message";
+                  form.reset();
+                  
+                  // Clear message after 5 seconds
+                  setTimeout(() => {
+                      result.style.display = "none";
+                  }, 5000);
+              } else {
+                  // Error from Web3Forms
+                  console.log(response);
+                  result.innerHTML = json.message;
+                  result.classList.add("text-red-500");
+                  button.innerText = "Send Message";
+              }
+          })
+          .catch(error => {
+              // Network error
+              console.log(error);
+              result.innerHTML = "Something went wrong!";
+              result.classList.add("text-red-500");
+              button.innerText = "Send Message";
+          });
+        });
+        </script>
 </body>
 </html>
